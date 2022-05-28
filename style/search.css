@@ -1,0 +1,132 @@
+header {
+    text-align: center;
+    background-image: url(../images/crypto-home.jpeg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 35%;
+}
+body{
+    margin:0;
+    background-image: url(../images/background-home2.jpg);
+}
+#header{
+    color: rgba(255,255,255,255);
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.7em;
+    padding: 3%;
+}
+header div{
+    padding: 5%;
+}
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);;
+    cursor: pointer;
+    font-size: 2em;
+    font-family:sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+input{
+    width: 300px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 100px;
+    border-color: white;
+    color: white;
+    font-size: 1.4em;
+    text-align: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color:rgba(254,213,8,255);
+    border-radius: 6px;
+    padding-bottom: 1%;
+    min-height: 71.4vh;
+}
+.contenitore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 1%;
+    border:  2px solid;
+    border-color: rgb(10,35,57);
+    border-radius: 2%;
+    width: 90%;
+}
+.images{
+    width: 20%;
+    border-radius: 8%;
+}
+h2{
+    text-align: center;
+    margin-top: 0.5%;
+    color: rgb(10,35,57);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+section div a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    background-color: rgb(10,35,57);
+    color: rgba(254,213,8,255);
+    border: none;
+    padding: 1% 5%;
+    border-radius: 10%;
+    font-family: Nunito, sans-serif;
+    font-size: 1.2em;
+}
+
+footer{
+    background-color: rgb(20, 20, 20);
+    height: 7.2vh;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+footer div{
+    color: rgb(209, 197, 197);
+    margin: auto;
+    font-size: 2em;
+    font-family: 'Hurricane', cursive;
+}
+#foot2{
+    display:none;
+}
+@media (max-width: 950px){
+    .images{
+        width: 40%;
+    }
+}
+@media (max-width: 500px){
+    .images{
+        width: 70%;
+    }
+}
+@media (max-width: 760px) {
+    #foot1{
+        display:none;
+    }
+    footer div{
+        font-size:1em;
+    }
+    #foot2{
+        display:block;
+    }
+    section{
+        margin-right:8%;
+        margin-left:8%;
+    }
+}

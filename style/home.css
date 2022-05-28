@@ -1,0 +1,244 @@
+nav{
+    display: flex;
+    height: 5%;
+    justify-content: space-between;
+    margin-top: 18px; 
+    position: absolute;
+    right:0;
+    left:2%;
+}
+header{
+    width: 100%;
+}
+#links{
+    display: flex;
+    width: 40%;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 1.6em;
+    font-family:sans-serif;
+    font-weight: bold;
+    width: 120%;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);;
+    cursor: pointer;
+}
+section div a{
+    font-size: 2.5em;
+    font-family: 'Hurricane', cursive;
+    color:rgba(7,29,50,255);
+    font-weight: 600;
+}
+body{
+    position: absolute;
+    margin:0;
+}
+#collegamenti{
+    font-family: 'Hurricane', cursive;
+    font-size: 1.8em;
+    color: rgb(255, 255, 255);
+}
+header{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background-size:cover;
+    background-repeat: no-repeat;  
+    background-image:url(../images/crypto-home.jpeg) ;   
+    height: 90vh;
+    position: relative;
+}
+h1{ 
+    top: 35%;
+    position: absolute;
+    bottom: 45%;
+    text-align: center;
+    height: 70%;
+    font-size: 1.5em;
+}
+
+h1 strong{
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    font-style:inherit;
+    line-height: 122%;
+    font-weight:1000;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color:rgba(254,213,8,255);
+    border-radius: 6px;
+    padding-bottom: 1%;
+}
+img.contatti{
+    min-width: 26px;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 10px;
+}
+body{
+    background-image:url(../images/background-home2.jpg); 
+}
+article{
+    text-align:center;
+}
+h2{
+    text-align:center;
+    color:rgba(7,29,50,255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    
+}
+
+section img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.testo{
+    width: 70%;
+}
+article{
+    font-size: 1.2em;
+    line-height: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color:rgba(10,35,57,255);
+    margin: bottom 2%;;
+    text-align:center;
+}
+section div {
+    text-align: center;
+    border-style:solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-color:rgb(10,35,57);
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 2%;
+
+}
+img{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width:40%;
+    height:10%;
+}
+
+footer{
+    background-color: rgb(20, 20, 20);
+    height: 7.2vh;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer div{
+    color: rgb(209, 197, 197);
+    margin: auto;
+    font-size: 2em;
+    font-family: 'Hurricane', cursive;
+}
+#foot2{
+    display:none;
+}
+
+#menu div {
+    width: 40px;
+    height: 6px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.menu {
+    display: none;
+    margin-top:2%;
+    margin-right:3%;
+    cursor: pointer;
+    margin-left: 2%;
+}
+
+@media (max-width: 1100px){
+    img{
+        width: 100%;
+        height:100%;
+        margin-bottom:13%;
+    }
+}
+
+@media (max-width: 760px) {
+    #links {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    #foot1{
+        display:none;
+    }
+    footer div{
+        font-size:1em;
+    }
+    #foot2{
+        display:block;
+    }
+    article{
+        text-align: justify;
+        font-size:1.2em;
+        line-height:150%;
+    }
+    div.testo{
+        width:90%;
+    }
+    section{
+        margin-right:8%;
+        margin-left:8%;
+    }
+    h1{
+        font-size:90%;
+    }
+    
+}
+.like-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    background-color: rgb(10,35,57);
+    color:rgba(254,213,8,255);
+    border: none;
+    padding: 1% 5%;
+    border-radius: 10%;
+    font-family: Nunito, sans-serif;
+    font-size: 1.2em;
+}
+
+.like-button-unselected{
+    cursor:pointer;
+}
+.hidden{
+    display: none;
+}
+.show_menu{
+    display: flex;
+}
+#show_menu{
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3em;
+}
+@media (min-width: 760px){
+    .show_menu{
+        display: none;
+    }
+}

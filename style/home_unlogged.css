@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    background-image: url(../images/home_unlogged.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+p{
+    color: aliceblue;
+}
+
+#name{
+    position: absolute;
+    left: 8%;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'BIZ UDPGothic', sans-serif;
+}
+
+#description{
+    width: 27%;
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.9em;
+        
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    border-radius: 10px;
+    width: 25%;
+    height: 8%;
+    font-family: 'BIZ UDPGothic', sans-serif;
+    font-size: 1.5em;
+    background-color: rgb(249, 206, 53);
+    cursor: pointer;
+    border: none;
+    color:rgba(7,29,50);
+}

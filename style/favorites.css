@@ -1,0 +1,175 @@
+header{
+    width: 100%;
+    height: 20vh;
+    background-image: url(../images/crypto-home.jpeg);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+header a{
+    text-align: center;
+    width: 40%;
+    font-size: 2.3em;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+
+header div{
+    color: rgba(254,213,8,255);
+    font-size: 2.5em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);;
+    cursor: pointer;
+}
+section div a{
+    font-size: 2.5em;
+    font-family: 'Hurricane', cursive;
+    color:rgba(7,29,50,255);
+    font-weight: 600;
+}
+body{
+    position: absolute;
+    margin:0;
+    width: 100%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color:rgba(254,213,8,255);
+    border-radius: 6px;
+    padding-bottom: 1%;
+    min-height: 71.4vh;
+}
+body{
+    background-image:url(../images/background-home2.jpg);
+}
+article{
+    text-align:center;
+}
+h2{
+    text-align:center;
+    color:rgba(7,29,50,255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    
+}
+
+section img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.testo{
+    width: 70%;
+}
+article{
+    font-size: 1.2em;
+    line-height: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color:rgba(10,35,57,255);
+    margin: bottom 2%;;
+    text-align:center;
+}
+section div {
+    text-align: center;
+    border-style:solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-color:rgb(10,35,57);
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 2%;
+
+}
+img{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width:40%;
+    height:10%;
+}
+
+.like-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    background-color: rgb(10,35,57);
+    color:rgba(254,213,8,255);
+    border: none;
+    padding: 1% 5%;
+    border-radius: 10%;
+    font-family: Nunito, sans-serif;
+    font-size: 1.2em;
+}
+
+.like-button-unselected{
+    cursor:pointer;
+}
+
+footer{
+    background-color: rgb(20, 20, 20);
+    height: 7.2vh;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+footer div{
+    color: rgb(209, 197, 197);
+    margin: auto;
+    font-size: 2em;
+    font-family: 'Hurricane', cursive;
+}
+#foot2{
+    display:none;
+}
+
+@media (max-width: 1100px){
+    img{
+        width: 100%;
+        height:100%;
+        margin-bottom:13%;
+    }
+}
+
+@media (max-width: 760px) {
+    #foot1{
+        display:none;
+    }
+    footer div{
+        font-size:1em;
+    }
+    #foot2{
+        display:block;
+    }
+    article{
+        text-align: justify;
+        font-size:1.2em;
+        line-height:150%;
+    }
+    div.testo{
+        width:90%;
+    }
+    section{
+        margin-right:8%;
+        margin-left:8%;
+    }
+}
+@media (max-width: 900px) {
+    header{
+       text-align: center;
+       font-size: 0.7em; 
+    }
+}
+
