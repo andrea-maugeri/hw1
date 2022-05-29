@@ -19,7 +19,7 @@ if(!isset($_SESSION['session_username'])){
     <body>
     <header> 
         <div>
-            <a href="http://localhost/hw1/home.php">Home</a>
+            <a href="home.php">Home</a>
             <div id='header'> <?php echo $_SESSION['session_username'] ?>,</br> cerca podcasts relativi ad una cryptovaluta </div>
             <form>
                 <input type='text'  placeholder = ' cerca una crypto'>

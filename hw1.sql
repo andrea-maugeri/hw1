@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Mag 28, 2022 alle 17:16
+-- Creato il: Mag 29, 2022 alle 12:30
 -- Versione del server: 10.4.21-MariaDB
 -- Versione PHP: 7.3.31
 
@@ -56,13 +56,6 @@ CREATE TABLE `preferiti` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dump dei dati per la tabella `preferiti`
---
-
-INSERT INTO `preferiti` (`user`, `title`, `img_url`, `content`, `link`) VALUES
-('', '', '', '', '');
-
---
 -- Indici per le tabelle scaricate
 --
 
@@ -76,7 +69,18 @@ ALTER TABLE `login`
 -- Indici per le tabelle `preferiti`
 --
 ALTER TABLE `preferiti`
-  ADD PRIMARY KEY (`user`,`title`);
+  ADD PRIMARY KEY (`user`,`title`),
+  ADD KEY `idx_user` (`user`);
+
+--
+-- Limiti per le tabelle scaricate
+--
+
+--
+-- Limiti per la tabella `preferiti`
+--
+ALTER TABLE `preferiti`
+  ADD CONSTRAINT `preferiti_ibfk_1` FOREIGN KEY (`user`) REFERENCES `login` (`username`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

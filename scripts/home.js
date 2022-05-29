@@ -1,4 +1,4 @@
-fetch("http://localhost/hw1/newdata_api.php").then(onResponse).then(onJson);
+fetch("./newdata_api.php").then(onResponse).then(onJson);
 function onResponse(response){
     return response.json();
 }
@@ -28,7 +28,7 @@ function onJson(json){
         link.href = result.link;
         link.textContent = "Clicca qui per l'articolo completo";
         form.appendChild(link);
-        stringa_fetch = "http://localhost/hw1/isFavorite.php?title=" +title.textContent;
+        stringa_fetch = "./isFavorite.php?title=" +title.textContent;
         const like = document.createElement('input');
         like.type = 'submit';
         like.classList.add('like-button');
@@ -72,7 +72,7 @@ function AddToFavorites(event){
         form_data.append("img",form.querySelector("img").src);
     form_data.append("article",form.querySelector("article").textContent);
     form_data.append("link",form.querySelector("a").href);
-    fetch("http://localhost/hw1/AddToFavorites.php", {method: 'post', body: form_data, mode: 'no-cors'});
+    fetch("./AddToFavorites.php", {method: 'post', body: form_data, mode: 'no-cors'});
     event.preventDefault();
     event.currentTarget.querySelector('input').value = 'Aggiunto ai preferiti ✔'
     event.currentTarget.querySelector('input').classList.remove('like-button-unselected');

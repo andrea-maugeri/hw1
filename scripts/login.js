@@ -35,7 +35,7 @@ function reset(event){
 function checkUser(event){
 	if(event.currentTarget.value){
 		evento = event.currentTarget;
-		const stringa_fetch = 'http://localhost/hw1/checkUser.php?user=' +event.currentTarget.value;
+		const stringa_fetch = './checkUser.php?user=' +event.currentTarget.value;
 		fetch(stringa_fetch).then(onResponse).then(HandErrore);
 	}
 }
@@ -62,7 +62,7 @@ function signup(event){
 	for(i=0;i<4;i++){
     	form_data.append(key[i],inputs[i].value);
 	}
-	fetch("http://localhost/hw1/signup.php", {method: 'post', body: form_data, mode: 'no-cors'}).then(onResponse).then(onSignup);
+	fetch("./signup.php", {method: 'post', body: form_data, mode: 'no-cors'}).then(onResponse).then(onSignup);
 }
 
 function onSignup(text){
@@ -70,5 +70,5 @@ function onSignup(text){
 		evento.parentNode.querySelector('.vuoto').classList.remove('hidden');
 	else if(text === '2')
 		evento.parentNode.querySelector('.errore').classList.remove('hidden');
-	else window.location.replace('http://localhost/hw1/home.php');
+	else window.location.replace('./home.php');
 }
