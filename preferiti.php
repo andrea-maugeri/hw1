@@ -20,7 +20,7 @@ if(!isset($_SESSION['session_username'])){
     </head>
     <body>
     <header>
-        <a href="http://localhost/hw1/home.php">Home</a>
+        <a href="home.php">Home</a>
         <div> <?php echo $_SESSION['session_username'] ?>, qui puoi trovare i tuoi articoli preferiti <div>
     </header>
     <section id="news">
